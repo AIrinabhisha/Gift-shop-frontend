@@ -1,0 +1,76 @@
+
+  /* Container for both charts */
+  .chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffc0cb, #ffffff);
+  }
+  
+  /* Common styles for charts */
+  .chart {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .chart-title {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  /* Bars for each chart */
+  .chart-bar {
+    width: 100%;
+    background-color: #4CAF50; /* Green color for customized */
+    border-radius: 0 0 8px 8px;
+    transition: height 0.5s ease-in-out;
+  }
+  
+  .custom-gift .chart-bar {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .non-custom-gift .chart-bar {
+    background-color: #FF5733; /* Red */
+  }
+  
+  /* Image within each chart */
+  .chart-image {
+    padding: 10px;
+  }
+  
+  .chart-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Button styles */
+  .view-all-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #2980b9;
+  }
+  

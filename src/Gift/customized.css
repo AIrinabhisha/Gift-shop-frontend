@@ -1,0 +1,78 @@
+/* Gift Card Container */
+.gift-card {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+  }
+  
+  .gift-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  /* Image Styling */
+  .gift-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Content area inside the card */
+  .gift-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Title of the gift */
+  .gift-name {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* Description of the gift */
+  .gift-details {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons Styling */
+  .gift-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .add-to-cart, .pay-now {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #2980b9;
+  }
+  
+  .pay-now {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .pay-now:hover {
+    background-color: #c0392b;
+  }
+  

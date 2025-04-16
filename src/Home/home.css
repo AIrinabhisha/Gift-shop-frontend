@@ -1,0 +1,71 @@
+.mid {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(to bottom, #ffc0cb, #ffffff); /* Pink to White */
+    font-family: Arial, sans-serif;
+  }
+  .mids{
+    margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffc0cb, #ffffff); /* Pink to White *//* Light background */
+
+  }
+  .magic-shop-text {
+    font-size: 60px;
+    font-weight: 700;
+    color: #6a1b9a; /* Purple Color */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+    animation: text-animation 2s ease-in-out infinite;
+  }
+  
+  /* Adding a subtle glow effect */
+  .magic-shop-text::before {
+    content: "✨ ";
+    font-size: 50px;
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    animation: sparkle 1.5s infinite alternate;
+  }
+  
+  /* Glow Animation */
+  @keyframes text-animation {
+    0% {
+      color: #6a1b9a; /* Purple */
+      text-shadow: 0 0 10px #ff7f50, 0 0 20px #ff6347, 0 0 30px #ff4500;
+    }
+    50% {
+      color: #ff6347; /* Orange */
+      text-shadow: 0 0 20px #ff6347, 0 0 40px #ff4500, 0 0 50px #ff7f50;
+    }
+    100% {
+      color: #6a1b9a; /* Purple */
+      text-shadow: 0 0 10px #ff7f50, 0 0 20px #ff6347, 0 0 30px #ff4500;
+    }
+  }
+  
+  /* Sparkle Effect */
+  @keyframes sparkle {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
